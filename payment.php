@@ -134,7 +134,7 @@ $tel_uri = "tel:" . str_replace("#", "%23", $ussd_code);
                     
                     <a href="<?php echo $tel_uri; ?>" class="btn-gradient btn-shine-action text-white py-6 px-10 rounded-[2.5rem] font-black uppercase tracking-[0.2em] text-xs shadow-xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all flex items-center justify-center gap-4 group">
                         <i class="fas fa-mobile-screen text-xl group-hover:rotate-12 transition-transform"></i>
-                        Garaac Hadda (<?php echo $ussd_code; ?>)
+                        Garaac Hadda
                     </a>
 
                     <div class="p-6 rounded-3xl bg-amber-50 border border-amber-100">

@@ -58,8 +58,11 @@ $orders_result = $conn->query($orders_query);
 </head>
 <body class="text-slate-800 min-h-screen flex">
 
+    <!-- Mobile Overlay -->
+    <div id="adminSidebarOverlay" onclick="toggleAdminMenu()" class="fixed inset-0 bg-slate-900/40 z-40 hidden lg:hidden backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+
     <!-- Sidebar -->
-    <aside class="fixed inset-y-0 left-0 w-72 glass-sidebar z-50 hidden lg:flex flex-col p-8">
+    <aside id="adminSidebar" class="fixed inset-y-0 left-0 w-72 glass-sidebar z-50 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col p-8 bg-white/95">
         <div class="flex items-center gap-3 mb-12">
             <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-lg">
                 <i class="fas fa-user-shield text-white text-lg"></i>
@@ -105,10 +108,15 @@ $orders_result = $conn->query($orders_query);
     <main class="flex-grow lg:ml-72 p-6 md:p-12 pb-24">
         
         <!-- Header -->
-        <header class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
-            <div>
-                <h1 class="text-3xl font-black text-slate-900 italic uppercase tracking-tight mb-2">Maamulka Dalabyada</h1>
-                <p class="text-slate-500 font-medium">Kala soco, maamul, oo u fuli dalabyada macaamiisha si deg deg ah.</p>
+        <header class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 relative z-10">
+            <div class="flex items-start gap-4">
+                <button onclick="toggleAdminMenu()" class="lg:hidden shrink-0 mt-1 w-12 h-12 flex items-center justify-center rounded-xl bg-white border border-slate-200 text-slate-600 shadow-sm focus:outline-none hover:bg-slate-50 transition-colors">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+                <div>
+                    <h1 class="text-3xl font-black text-slate-900 italic uppercase tracking-tight mb-2">Maamulka Dalabyada</h1>
+                    <p class="text-slate-500 font-medium">Kala soco, maamul, oo u fuli dalabyada macaamiisha si deg deg ah.</p>
+                </div>
             </div>
             <div class="flex items-center gap-4">
                 <div class="px-6 py-3 bg-white rounded-2xl shadow-sm border border-slate-100 flex items-center gap-3">
@@ -257,6 +265,28 @@ $orders_result = $conn->query($orders_query);
 
     </main>
 
+    <script>
+        function toggleAdminMenu() {
+            const sidebar = document.getElementById('adminSidebar');
+            const overlay = document.getElementById('adminSidebarOverlay');
+            
+            if (sidebar.classList.contains('-translate-x-full')) {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                // Force reflow
+                void overlay.offsetWidth;
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+                overlay.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.remove('opacity-100', 'pointer-events-auto');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                setTimeout(() => {
+                    overlay.classList.add('hidden');
+                }, 300);
+            }
+        }
+    </script>
 </body>
 </html>
 <?php $conn->close(); ?>
