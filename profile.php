@@ -44,10 +44,10 @@ $orders_result = $conn->query($orders_sql);
         .status-cancelled, .status-Cancelled { background: #fee2e2; color: #991b1b; }
     </style>
 </head>
-<body class="text-slate-800 min-h-screen flex flex-col pt-32">
+<body class="text-slate-800 min-h-screen flex flex-col pt-24 md:pt-32">
 
     <!-- Premium Floating Navbar -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-6 py-4 flex items-center justify-between">
+    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] md:w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <a href="index.php" class="flex items-center gap-3">
             <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">
                 <i class="fas fa-gamepad text-white text-lg"></i>
@@ -93,12 +93,12 @@ $orders_result = $conn->query($orders_sql);
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-6 pb-24 max-w-7xl">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <main class="flex-grow container mx-auto px-4 md:px-6 pb-16 md:pb-24 max-w-7xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8">
             
             <!-- Sidebar / User Info -->
             <div class="lg:col-span-4 space-y-6">
-                <div class="glass-card rounded-[40px] shadow-2xl p-8 text-center relative overflow-hidden">
+                <div class="glass-card rounded-3xl md:rounded-[40px] shadow-2xl p-6 md:p-8 text-center relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-24 btn-gradient opacity-10"></div>
                     <div class="relative pt-4">
                         <div class="w-24 h-24 rounded-[2.5rem] bg-blue-50 flex items-center justify-center text-blue-600 text-4xl mx-auto mb-6 shadow-xl shadow-blue-500/10 rotate-3">
@@ -150,8 +150,8 @@ $orders_result = $conn->query($orders_sql);
 
             <!-- Content Area / Orders -->
             <div class="lg:col-span-8">
-                <div class="glass-card rounded-[40px] shadow-2xl p-8 md:p-12 overflow-hidden">
-                    <div class="flex items-center justify-between mb-10">
+                <div class="glass-card rounded-3xl md:rounded-[40px] shadow-2xl p-6 md:p-12 overflow-hidden">
+                    <div class="flex items-center justify-between mb-6 md:mb-10">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-2xl btn-gradient flex items-center justify-center text-white shadow-lg">
                                 <i class="fas fa-shopping-bag text-lg"></i>
@@ -219,9 +219,9 @@ $orders_result = $conn->query($orders_sql);
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-white border-t border-slate-100 pt-24 pb-12 px-6">
+    <footer class="bg-white border-t border-slate-100 pt-12 md:pt-24 pb-8 md:pb-12 px-4 md:px-6">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-slate-100 pb-16 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 border-b border-slate-100 pb-10 md:pb-16 mb-8 md:mb-12">
                 <div class="space-y-6 col-span-1 lg:col-span-1.5">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">

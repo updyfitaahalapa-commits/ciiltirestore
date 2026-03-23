@@ -105,10 +105,10 @@ $orders_result = $conn->query($orders_query);
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-grow lg:ml-72 p-6 md:p-12 pb-24">
+    <main class="flex-grow lg:ml-72 p-4 md:p-12 pb-16 md:pb-24">
         
         <!-- Header -->
-        <header class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 relative z-10">
+        <header class="flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12 relative z-10">
             <div class="flex items-start gap-4">
                 <button onclick="toggleAdminMenu()" class="lg:hidden shrink-0 mt-1 w-12 h-12 flex items-center justify-center rounded-xl bg-white border border-slate-200 text-slate-600 shadow-sm focus:outline-none hover:bg-slate-50 transition-colors">
                     <i class="fas fa-bars text-lg"></i>
@@ -127,8 +127,8 @@ $orders_result = $conn->query($orders_query);
         </header>
 
         <!-- Stats Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div class="glass-card rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-blue-500">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
+            <div class="glass-card rounded-3xl md:rounded-[2.5rem] p-6 md:p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-blue-500">
                 <div class="flex items-center justify-between mb-4">
                     <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-xl">
                         <i class="fas fa-shopping-bag"></i>
@@ -139,7 +139,7 @@ $orders_result = $conn->query($orders_query);
                 <span class="text-[11px] font-bold text-slate-400 uppercase tracking-widest leading-none">Dalabyo Guud</span>
             </div>
 
-            <div class="glass-card rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-amber-500">
+            <div class="glass-card rounded-3xl md:rounded-[2.5rem] p-6 md:p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-amber-500">
                 <div class="flex items-center justify-between mb-4">
                     <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-xl">
                         <i class="fas fa-clock"></i>
@@ -150,7 +150,7 @@ $orders_result = $conn->query($orders_query);
                 <span class="text-[11px] font-bold text-slate-400 uppercase tracking-widest leading-none">Ina Sugaysa</span>
             </div>
 
-            <div class="glass-card rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-green-500">
+            <div class="glass-card rounded-3xl md:rounded-[2.5rem] p-6 md:p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-green-500">
                 <div class="flex items-center justify-between mb-4">
                     <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-xl">
                         <i class="fas fa-check-double"></i>
@@ -161,7 +161,7 @@ $orders_result = $conn->query($orders_query);
                 <span class="text-[11px] font-bold text-slate-400 uppercase tracking-widest leading-none">Lacagta Guud</span>
             </div>
 
-            <div class="glass-card rounded-[2.5rem] p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-slate-900">
+            <div class="glass-card rounded-3xl md:rounded-[2.5rem] p-6 md:p-8 shadow-sm hover:shadow-xl transition-all border-b-4 border-b-slate-900">
                 <div class="flex items-center justify-between mb-4">
                     <div class="w-12 h-12 bg-slate-900 text-white rounded-2xl flex items-center justify-center text-xl">
                         <i class="fas fa-users"></i>
@@ -179,8 +179,8 @@ $orders_result = $conn->query($orders_query);
         </div>
 
         <!-- Orders Table -->
-        <div class="glass-card rounded-[2.5rem] overflow-hidden shadow-sm">
-            <div class="p-8 border-b border-slate-100 flex items-center justify-between">
+        <div class="glass-card rounded-3xl md:rounded-[2.5rem] overflow-hidden shadow-sm">
+            <div class="p-6 md:p-8 border-b border-slate-100 flex items-center justify-between">
                 <h3 class="text-xl font-black text-slate-900 uppercase italic tracking-tight">Dalabyadii u dambeeyay</h3>
                 <div class="flex gap-2">
                     <button class="px-4 py-2 bg-slate-100 text-slate-600 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-200 transition-all">Export</button>

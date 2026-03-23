@@ -38,10 +38,10 @@ $selected_package = isset($_GET['package']) ? $_GET['package'] : '';
         #headerDropdown.active { opacity: 1; transform: translateY(0); pointer-events: auto; }
     </style>
 </head>
-<body class="text-slate-800 min-h-screen flex flex-col pt-32">
+<body class="text-slate-800 min-h-screen flex flex-col pt-24 md:pt-32">
 
     <!-- Premium Floating Navbar -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-6 py-4 flex items-center justify-between">
+    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] md:w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <a href="index.php" class="flex items-center gap-3">
             <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">
                 <i class="fas fa-gamepad text-white text-lg"></i>
@@ -89,14 +89,14 @@ $selected_package = isset($_GET['package']) ? $_GET['package'] : '';
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-6 pb-24 max-w-4xl">
-        <a href="index.php" class="inline-flex items-center gap-2 text-slate-500 hover:text-blue-600 font-bold text-sm mb-8 transition-colors group">
+    <main class="flex-grow container mx-auto px-4 md:px-6 pb-16 md:pb-24 max-w-4xl">
+        <a href="index.php" class="inline-flex items-center gap-2 text-slate-500 hover:text-blue-600 font-bold text-sm mb-6 md:mb-8 transition-colors group">
             <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
             Dib u noqo (Home)
         </a>
 
-        <div class="glass-card rounded-[40px] shadow-2xl overflow-hidden">
-            <div class="bg-gradient-to-r from-blue-600 to-sky-500 p-12 text-center">
+        <div class="glass-card rounded-3xl md:rounded-[40px] shadow-2xl overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-600 to-sky-500 p-8 md:p-12 text-center">
                 <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-6">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
@@ -104,8 +104,8 @@ $selected_package = isset($_GET['package']) ? $_GET['package'] : '';
                 <p class="text-blue-50 font-medium">Buuxi macluumaadka hoos ku qoran si aad u hesho UC-daada.</p>
             </div>
 
-            <form id="orderForm" action="process_order.php" method="POST" class="p-8 md:p-12 space-y-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <form id="orderForm" action="process_order.php" method="POST" class="p-6 md:p-12 space-y-6 md:space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
                     <div class="space-y-2">
                         <label for="playerId" class="text-sm font-black text-slate-700 uppercase tracking-widest pl-1">ID-ga Game-ka *</label>
                         <div class="relative group">
@@ -205,9 +205,9 @@ $selected_package = isset($_GET['package']) ? $_GET['package'] : '';
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-white border-t border-slate-100 pt-24 pb-12 px-6">
+    <footer class="bg-white border-t border-slate-100 pt-12 md:pt-24 pb-8 md:pb-12 px-4 md:px-6">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-slate-100 pb-16 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 border-b border-slate-100 pb-10 md:pb-16 mb-8 md:mb-12">
                 <div class="space-y-6 col-span-1 lg:col-span-1.5">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">

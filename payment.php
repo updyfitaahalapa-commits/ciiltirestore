@@ -54,14 +54,14 @@ $uc_amount = $order['package_uc'];
         }
     </style>
 </head>
-<body class="text-slate-800 min-h-screen flex flex-col pt-32 relative overflow-x-hidden">
+<body class="text-slate-800 min-h-screen flex flex-col pt-24 md:pt-32 relative overflow-x-hidden">
 
     <!-- Animated Background Elements -->
     <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-100 rounded-full blur-[120px] opacity-50 -z-10"></div>
     <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-sky-100 rounded-full blur-[120px] opacity-50 -z-10"></div>
 
     <!-- Premium Floating Navbar -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-6 py-4 flex items-center justify-between">
+    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] md:w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <a href="index.php" class="flex items-center gap-3">
             <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">
                 <i class="fas fa-gamepad text-white text-lg"></i>
@@ -77,10 +77,10 @@ $uc_amount = $order['package_uc'];
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-6 pb-24 max-w-2xl flex flex-col justify-center">
-        <div class="glass-card rounded-[40px] shadow-2xl p-8 md:p-12 text-center relative overflow-hidden">
+    <main class="flex-grow container mx-auto px-4 md:px-6 pb-16 md:pb-24 max-w-2xl flex flex-col justify-center">
+        <div class="glass-card rounded-3xl md:rounded-[40px] shadow-2xl p-6 md:p-12 text-center relative overflow-hidden">
             
-            <div class="mb-10 relative">
+            <div class="mb-6 md:mb-10 relative">
                 <div class="w-20 h-20 bg-green-50 text-green-500 rounded-full flex items-center justify-center text-3xl mx-auto mb-6 shadow-xl shadow-green-500/10">
                     <i class="fas fa-check-double"></i>
                 </div>
@@ -163,7 +163,7 @@ $tel_uri = "tel:" . str_replace("#", "%23", $ussd_code);
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-white border-t border-slate-100 py-12 px-6">
+    <footer class="bg-white border-t border-slate-100 py-8 md:py-12 px-4 md:px-6">
         <div class="container mx-auto text-center">
             <p class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">&copy; <?php echo date('Y'); ?> CIILTIRE STORE. Dhamaan xuquuqda waa dhowran yihiin.</p>
         </div>

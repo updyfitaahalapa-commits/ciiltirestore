@@ -24,10 +24,10 @@ $is_logged_in = isset($_SESSION['user_id']);
         #headerDropdown.active { opacity: 1; transform: translateY(0); pointer-events: auto; }
     </style>
 </head>
-<body class="text-slate-800 min-h-screen flex flex-col pt-32">
+<body class="text-slate-800 min-h-screen flex flex-col pt-24 md:pt-32">
 
     <!-- Premium Floating Navbar -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-6 py-4 flex items-center justify-between">
+    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] md:w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <a href="index.php" class="flex items-center gap-3">
             <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">
                 <i class="fas fa-gamepad text-white text-lg"></i>
@@ -82,8 +82,8 @@ endif; ?>
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-6 pb-24 max-w-4xl">
-        <div class="text-center mb-16">
+    <main class="flex-grow container mx-auto px-4 md:px-6 pb-16 md:pb-24 max-w-4xl">
+        <div class="text-center mb-10 md:mb-16">
             <div class="w-20 h-20 btn-gradient rounded-[2rem] flex items-center justify-center text-white text-3xl mx-auto mb-8 shadow-xl shadow-blue-500/20 rotate-3">
                 <i class="fas fa-question"></i>
             </div>
@@ -93,8 +93,8 @@ endif; ?>
 
         <div class="space-y-4">
             <!-- FAQ 1 -->
-            <div class="faq-item group glass-card rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
-                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-8 text-left flex items-center justify-between gap-6">
+            <div class="faq-item group glass-card rounded-2xl md:rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
+                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-5 md:p-8 text-left flex items-center justify-between gap-6">
                     <h3 class="text-lg font-bold text-slate-800 tracking-tight">Sidee UC loo iibsadaa?</h3>
                     <div class="faq-icon w-10 h-10 rounded-xl bg-slate-50 text-slate-400 flex items-center justify-center transition-all group-hover:bg-blue-50 group-hover:text-blue-500">
                         <i class="fas fa-chevron-down text-xs"></i>
@@ -106,8 +106,8 @@ endif; ?>
             </div>
 
             <!-- FAQ 2 -->
-            <div class="faq-item group glass-card rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
-                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-8 text-left flex items-center justify-between gap-6">
+            <div class="faq-item group glass-card rounded-2xl md:rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
+                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-5 md:p-8 text-left flex items-center justify-between gap-6">
                     <h3 class="text-lg font-bold text-slate-800 tracking-tight">Intee in le'eg ayay qaadataa inaan helo UC-ga?</h3>
                     <div class="faq-icon w-10 h-10 rounded-xl bg-slate-50 text-slate-400 flex items-center justify-center transition-all group-hover:bg-blue-50 group-hover:text-blue-500">
                         <i class="fas fa-chevron-down text-xs"></i>
@@ -119,8 +119,8 @@ endif; ?>
             </div>
 
             <!-- FAQ 3 -->
-            <div class="faq-item group glass-card rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
-                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-8 text-left flex items-center justify-between gap-6">
+            <div class="faq-item group glass-card rounded-2xl md:rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
+                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-5 md:p-8 text-left flex items-center justify-between gap-6">
                     <h3 class="text-lg font-bold text-slate-800 tracking-tight">Maxaa dhacaya haddii aan ID khaldan bixiyo?</h3>
                     <div class="faq-icon w-10 h-10 rounded-xl bg-slate-50 text-slate-400 flex items-center justify-center transition-all group-hover:bg-blue-50 group-hover:text-blue-500">
                         <i class="fas fa-chevron-down text-xs"></i>
@@ -132,8 +132,8 @@ endif; ?>
             </div>
 
             <!-- FAQ 4 -->
-            <div class="faq-item group glass-card rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
-                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-8 text-left flex items-center justify-between gap-6">
+            <div class="faq-item group glass-card rounded-2xl md:rounded-3xl border border-slate-100 overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-500/5">
+                <button onclick="this.parentElement.classList.toggle('active')" class="w-full p-5 md:p-8 text-left flex items-center justify-between gap-6">
                     <h3 class="text-lg font-bold text-slate-800 tracking-tight">Haddii aan dhibaatada la kulmo, yaan lala soo xiriiraa?</h3>
                     <div class="faq-icon w-10 h-10 rounded-xl bg-slate-50 text-slate-400 flex items-center justify-center transition-all group-hover:bg-blue-50 group-hover:text-blue-500">
                         <i class="fas fa-chevron-down text-xs"></i>
@@ -145,19 +145,19 @@ endif; ?>
             </div>
         </div>
 
-        <div class="mt-20 p-12 glass-card rounded-[40px] text-center border-2 border-blue-50">
+        <div class="mt-12 md:mt-20 p-6 md:p-12 glass-card rounded-3xl md:rounded-[40px] text-center border-2 border-blue-50">
             <h2 class="text-2xl font-black text-slate-900 mb-4 tracking-tight leading-tight italic uppercase">Wali su'aal ma qabtaa?</h2>
             <p class="text-slate-500 font-medium mb-10 max-w-lg mx-auto leading-relaxed">Ha ka walaacin, kooxdayada caawinaadda waxay diyaar u yihiin inay ku caawiyaan saacad kasta.</p>
-            <a href="contact.php" class="inline-block btn-gradient text-white px-12 py-4 rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-blue-500/20">
+            <a href="contact.php" class="inline-block btn-gradient text-white px-8 md:px-12 py-3 md:py-4 rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-blue-500/20 text-xs md:text-sm">
                 Nala soo xiriir hadda
             </a>
         </div>
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-white border-t border-slate-100 pt-24 pb-12 px-6">
+    <footer class="bg-white border-t border-slate-100 pt-12 md:pt-24 pb-8 md:pb-12 px-4 md:px-6">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-slate-100 pb-16 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 border-b border-slate-100 pb-10 md:pb-16 mb-8 md:mb-12">
                 <div class="space-y-6 col-span-1 lg:col-span-1.5">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">

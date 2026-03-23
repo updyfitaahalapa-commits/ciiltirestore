@@ -21,10 +21,10 @@ $is_logged_in = isset($_SESSION['user_id']);
         #headerDropdown.active { opacity: 1; transform: translateY(0); pointer-events: auto; }
     </style>
 </head>
-<body class="text-slate-800 min-h-screen flex flex-col pt-32">
+<body class="text-slate-800 min-h-screen flex flex-col pt-24 md:pt-32">
 
     <!-- Premium Floating Navbar -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-6 py-4 flex items-center justify-between">
+    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] md:w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <a href="index.php" class="flex items-center gap-3">
             <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">
                 <i class="fas fa-gamepad text-white text-lg"></i>
@@ -77,8 +77,8 @@ $is_logged_in = isset($_SESSION['user_id']);
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-6 pb-24 max-w-4xl">
-        <div class="text-center mb-16">
+    <main class="flex-grow container mx-auto px-4 md:px-6 pb-16 md:pb-24 max-w-4xl">
+        <div class="text-center mb-10 md:mb-16">
             <div class="w-20 h-20 btn-gradient rounded-[2.5rem] flex items-center justify-center text-white text-3xl mx-auto mb-8 shadow-xl shadow-blue-500/20 rotate-6">
                 <i class="fas fa-undo-alt"></i>
             </div>
@@ -86,7 +86,7 @@ $is_logged_in = isset($_SESSION['user_id']);
             <p class="text-slate-500 font-medium text-lg">Fadlan si taxadar leh u aqri shuruudaha lacag celinta (Refund Policy).</p>
         </div>
 
-        <div class="glass-card rounded-[40px] shadow-2xl p-8 md:p-16 space-y-12">
+        <div class="glass-card rounded-3xl md:rounded-[40px] shadow-2xl p-6 md:p-16 space-y-8 md:space-y-12">
             
             <section class="space-y-6">
                 <div class="flex items-center gap-4">
@@ -127,7 +127,7 @@ $is_logged_in = isset($_SESSION['user_id']);
 
         </div>
 
-        <div class="mt-16 text-center">
+        <div class="mt-10 md:mt-16 text-center">
             <a href="contact.php" class="btn-gradient text-white px-10 py-5 rounded-[2rem] font-black uppercase tracking-widest text-xs shadow-xl shadow-blue-500/20 inline-flex items-center gap-3">
                 <i class="fas fa-headset"></i> Support La Xiriir
             </a>
@@ -135,9 +135,9 @@ $is_logged_in = isset($_SESSION['user_id']);
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-white border-t border-slate-100 pt-24 pb-12 px-6">
+    <footer class="bg-white border-t border-slate-100 pt-12 md:pt-24 pb-8 md:pb-12 px-4 md:px-6">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-slate-100 pb-16 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 border-b border-slate-100 pb-10 md:pb-16 mb-8 md:mb-12">
                 <div class="space-y-6 col-span-1 lg:col-span-1.5">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">

@@ -50,10 +50,10 @@ $is_logged_in = isset($_SESSION['user_id']);
         }
     </style>
 </head>
-<body class="text-slate-800 min-h-screen flex flex-col pt-32">
+<body class="text-slate-800 min-h-screen flex flex-col pt-24 md:pt-32">
 
     <!-- Premium Floating Navbar -->
-    <nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-6 py-4 flex items-center justify-between">
+    <nav class="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[95%] md:w-[92%] max-w-7xl z-50 glass-nav rounded-2xl shadow-sm px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <a href="index.php" class="flex items-center gap-3">
             <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">
                 <i class="fas fa-gamepad text-white text-lg"></i>
@@ -105,8 +105,8 @@ endif; ?>
         </div>
     </nav>
 
-    <main class="flex-grow container mx-auto px-6 pb-24 max-w-xl flex flex-col justify-center">
-        <div class="text-center mb-12">
+    <main class="flex-grow container mx-auto px-4 md:px-6 pb-16 md:pb-24 max-w-xl flex flex-col justify-center">
+        <div class="text-center mb-8 md:mb-12">
             <div class="w-20 h-20 btn-gradient rounded-[2.5rem] flex items-center justify-center text-white text-3xl mx-auto mb-8 shadow-xl shadow-blue-500/20 rotate-12">
                 <i class="fas fa-headset"></i>
             </div>
@@ -116,7 +116,7 @@ endif; ?>
             </p>
         </div>
 
-        <div class="glass-card rounded-[40px] shadow-2xl p-8 md:p-12 text-center space-y-8 relative overflow-hidden">
+        <div class="glass-card rounded-3xl md:rounded-[40px] shadow-2xl p-6 md:p-12 text-center space-y-8 relative overflow-hidden">
             <!-- Decorative circle -->
             <div class="absolute -top-12 -right-12 w-32 h-32 bg-blue-50 rounded-full blur-3xl opacity-50"></div>
             <div class="absolute -bottom-12 -left-12 w-32 h-32 bg-green-50 rounded-full blur-3xl opacity-50"></div>
@@ -171,9 +171,9 @@ endif; ?>
     </main>
 
     <!-- Professional Footer -->
-    <footer class="bg-white border-t border-slate-100 pt-24 pb-12 px-6">
+    <footer class="bg-white border-t border-slate-100 pt-12 md:pt-24 pb-8 md:pb-12 px-4 md:px-6">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-slate-100 pb-16 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 border-b border-slate-100 pb-10 md:pb-16 mb-8 md:mb-12">
                 <div class="space-y-6 col-span-1 lg:col-span-1.5">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center shadow-md">
